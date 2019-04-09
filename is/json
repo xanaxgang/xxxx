@@ -1,0 +1,26 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "Roblox Trade Helper",
+  "description": "Trade Easily With Roblox Trade Helper ! With Ton of features 100+! ",
+  "version": "5.7.9.3",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  
+  "permissions": [
+    "activeTab",
+    "*://ajax.googleapis.com/",
+    "cookies",
+    "*://*.roblox.com/",
+    "background",
+    "alarms",
+    "notifications"
+  ],
+
+  "background": {
+  	"scripts": ["bg.js"],
+  	"persistent": false
+  }
+
+}
